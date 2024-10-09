@@ -1,83 +1,81 @@
-/* Main Heading (h1) */
+
 h1 {
-  color: #1e81b0; /* Bright Orange Red */
+  color: #1e81b0; 
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* Subheadings (h2) */
+
 h2 {
-  color: #1E90FF; /* Dodger Blue */
+  color: #1E90FF;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-/* Join Section Heading */
 .join-section h2 {
-  color: #32CD32; /* Lime Green */
+  color: #32CD32;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Congrats message */
+
 .congrats-message {
-  color: #28a745; /* Green color */
+  color: #28a745; 
   font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
 }
 
 
-/* Question Section Heading */
+
 .question-section h2 {
-  color: #21130d; /* Deep Pink */
+  color: #21130d; 
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-/* Result Section Heading */
+
 .result-section h2 {
-  color: #FFD700; /* Gold */
+  color: #FFD700; 
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 }1433ff
 
-/* Paragraphs and other text */
+
 p {
-  color: #333; /* Dark Gray for better readability */
+  color: #333; 
   font-weight: bold;
   margin-top: 15px;
 }
 
-/* Error messages */
+
 .error-message {
-  color: #FF0000; /* Bright Red for error messages */
+  color: #FF0000; 
   font-weight: bold;
 }
 
-/* Submit and Skip buttons */
+
 button.submit-btn {
-  background-color: #28a745; /* Green */
+  background-color: #28a745; 
   color: white;
 }
 
 button.skip-btn {
-  background-color: #ffc107; /* Yellow */
+  background-color: #ffc107; 
   color: white;
 }
 
-/* Logo header section */
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* background-color: aquamarine; */
   background-color: aquamarine;
   margin: 10px;
 }
@@ -86,14 +84,14 @@ button.skip-btn {
   height: 40px;
 }
 
-/* Horizontal rule */
+
 hr {
   width: 100%;
   height: 1px;
   background-color: black;
 }
 
-/* Sections layout */
+
 .section {
   display: flex;
   flex-direction: column;
@@ -101,7 +99,7 @@ hr {
   align-items: center;
 }
 
-/* Background and typography */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #76b5c5;
@@ -112,7 +110,7 @@ body {
   margin: 0;
 }
 
-/* Container styling */
+
 .app {
   text-align: center;
   width: 80%;
@@ -123,7 +121,7 @@ body {
   padding: 20px;
 }
 
-/* Inputs styling */
+
 input {
   padding: 8px;
   margin-top: 10px;
@@ -132,24 +130,24 @@ input {
   width: 80%;
 }
 
-/* Buttons styling */
+
 button {
   padding: 10px 15px;
   margin-top: 10px;
   margin-right: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff; /* Blue */
+  background-color: #007bff; 
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
-/* Options for questions */
+
 .options {
   margin-top: 20px;
 }

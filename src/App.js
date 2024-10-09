@@ -46,8 +46,8 @@ const App = () => {
   const [error, setError] = useState(""); 
   const [isGameOver, setIsGameOver] = useState(false);
   const [selectedOption, setSelectedOption] = useState(""); 
-  const [completed, setCompleted] = useState(false); // Track if all questions are answered
-  const [participants, setParticipants] = useState([]); // Track participants
+  const [completed, setCompleted] = useState(false); 
+  const [participants, setParticipants] = useState([]); 
 
   useEffect(() => {
     if (isGameStarted) {
@@ -56,7 +56,7 @@ const App = () => {
       setCurrentQuestion(0);
       setScore(0);
       setTimeLeft(60); 
-      // Request notification permission
+      
       Notification.requestPermission();
     }
   }, [isGameStarted]);
@@ -87,13 +87,13 @@ const App = () => {
       if (questions[currentQuestion]?.answer === selectedOption) {
         setFeedback(`Congratulations, ${playerName}! Correct Answer!`);
         setScore(score + 1);
-        // Move to next question after a short delay
+        
         setTimeout(() => {
           handleNextQuestion();
         }, 2000);
       } else {
         setFeedback("Wrong Answer!");        
-        // Send notification for wrong answer
+        
         if (Notification.permission === "granted") {
           new Notification("Wrong Answer!", {
             body: "The correct answer was: " + questions[currentQuestion].answer,
@@ -110,12 +110,12 @@ const App = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // When all questions are answered
+      
       setCompleted(true);
       setIsGameStarted(false);
       setIsGameOver(true);
 
-      // Add participant to summary
+      
       setParticipants((prev) => [...prev, { name: playerName, score }]);
     }
   };
@@ -133,12 +133,12 @@ const App = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      // When all questions are answered
+      
       setCompleted(true);
       setIsGameStarted(false);
       setIsGameOver(true);
 
-      // Add participant to summary
+      
       setParticipants((prev) => [...prev, { name: playerName, score }]);
     }
   };
